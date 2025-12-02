@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "63e6b555-d04e-48c8-aee8-91ccae97f65d",
+		"name": "Teslo-Nest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38349773"
+	},
+	"item": [
+		{
+			"name": "Teslo Shop",
+			"item": [
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Find All Products",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Upload Product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Get image by Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/files/product/8529100-00-A_1.jpg"
+							},
+							"response": []
+						},
+						{
+							"name": "Find product By id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/products/0094799a-52e1-4df0-a60c-c30e9bec9098"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Product",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:3000/api/products/10a787de-a1f5-42ef-980e-1a87b85c552d"
+							},
+							"response": []
+						},
+						{
+							"name": "Create Product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Fernando's shirt51\",\n    \"sizes\": [\"SM\", \"M\", \"L\" ],\n    \"gender\": \"men\",\n    \"price\": 45,\n    \"images\": [\n        \"http://image1.jpg\",\n        \"http://image2.jpg\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:3000/api/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Editar Producto",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"title\": \"Fernando's shirt 14\",\n \"slug\": \"fernando herrera 15\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:3000/api/products/2c66ac52-7d3d-4686-8320-83ff0f09bd25"
+							},
+							"response": []
+						},
+						{
+							"name": "SEED",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/seed"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/register"
+							},
+							"response": []
+						},
+						{
+							"name": "Private Route",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/private"
+							},
+							"response": []
+						},
+						{
+							"name": "Check Status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAzN2Q3MmNkLWQyODgtNDhkNS1hMDlhLWFlYmM5NTc1ZGZhMyIsImlhdCI6MTc0NjY0OTgwMywiZXhwIjoxNzQ2NjU3MDAzfQ.GNq-wtsyKiL1SskUISGXfBWH9X6RyCAV4NH3UbqasLI"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/check-status"
+							},
+							"response": []
+						},
+						{
+							"name": "Private Route 2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/private"
+							},
+							"response": []
+						},
+						{
+							"name": "Private Route 3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/private"
+							},
+							"response": []
+						},
+						{
+							"name": "Login user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "http://localhost:3000/api/auth/register"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
