@@ -23,6 +23,9 @@ import { MessagesWsModule } from './messages-ws/messages-ws.module';
       password: process.env.DB_PASSWORD,
       autoLoadEntities: true,
       synchronize: true,
+      ssl: {
+    rejectUnauthorized: false,
+  }
     }),
 
     ServeStaticModule.forRoot({
